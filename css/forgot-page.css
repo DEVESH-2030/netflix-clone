@@ -6,8 +6,13 @@ body{
     box-sizing: border-box;
     font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
     /* background-image: url('../images/new_theme_image/24_login-page-image.jpg'); */
-    background-image: linear-gradient(57deg,  rgba(4, 4, 4, 0.654) 85.08%, rgba(0, 0, 0, 0.65) 91.00%), url(../images/new_theme_image/netflix_banner_new.jpg);
-    
+    background-image: linear-gradient(57deg,  rgba(8, 8, 8, 0.498) 85.08%, rgba(0, 0, 0, 0.406) 91.00%), url(../images/new_theme_image/forgot-page-banner.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* overflow: hidden; */
 }
 
 nav {
@@ -28,14 +33,44 @@ nav {
     width: 170px;
     height: 55px;
     cursor: pointer;
+    margin-top: 20px;
+    margin-left: 40px;
+    position: relative;
+}
+
+
+.menus {
+    flex: 1;
+    text-align: right;
+}
+
+.menus ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.sign_in {
+    border: 0;
+    outline: 0;
+    color: rgb(229, 11, 11);
+    background: rgba(2, 2, 2, 0);
+    font-size: 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 30px;
+    padding: 7px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
 }
 
 /* form section  */
 .sign-in {
     display: flex;
     z-index: 1;
-    color: white;
-    background-color: rgba(0,0,0,0.7);
+    color: rgb(2, 2, 2);
+    background-color: rgb(255, 255, 255);
     border-radius: 4px;
     box-sizing: border-box;
     flex-direction: column;
@@ -46,7 +81,7 @@ nav {
 }
 
 .form-data input {
-    background-color: rgba(39, 39, 39, 0.7);
+    background-color: rgb(253, 253, 253);
     color: rgb(243, 239, 239);
     font-size: 16px;
     cursor: pointer;
@@ -67,7 +102,7 @@ nav {
 
 .form-data input::placeholder {
     margin-left: 5px;
-    color: rgb(196, 190, 190);
+    color: rgb(95, 91, 91);
     opacity: 1;
   }
   
@@ -94,7 +129,7 @@ nav {
 /* Remember me section  */
 
 .remember {
-    margin-top: 20%;
+    margin-top: 7%;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -115,13 +150,13 @@ nav {
 }
 
 .remember .sign-up {
-    color: rgb(226, 220, 220);
+    color: rgb(7, 114, 214);
     cursor: pointer;
     font-size: 17px;
 }
 
 .remember .sign-up a {
-    color: white;
+    color: rgb(9, 126, 236);
     cursor: pointer;
     font-size: 17px;
     text-decoration: none;
@@ -134,7 +169,7 @@ nav {
 .remember .reCAPTCHA {
     color: gray;
     font-size: 13px;
-    margin-bottom: 24%;
+    margin-bottom: 0;
 }
 
 .remember .reCAPTCHA a{
@@ -147,7 +182,7 @@ nav {
 
 /* footer section  */
 .container-main {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.478);
 }
 
 .child-footer-question {
@@ -212,4 +247,12 @@ nav {
     background-color: rgba(92, 90, 90, 0.396);
     text-decoration: none;
     border: none;
+}
+
+.emailme {
+    border-radius: 0px;
+}
+
+.textme {
+    border-radius: 0px;
 }
